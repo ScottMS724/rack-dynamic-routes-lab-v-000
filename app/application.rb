@@ -19,7 +19,8 @@ class Application
       resp.finish 
     else 
       resp.write "Path Not Found"
-      resp.finish 
+    end 
+    resp.finish 
       
   end 
 end 
