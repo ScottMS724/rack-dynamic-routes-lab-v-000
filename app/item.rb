@@ -6,6 +6,6 @@ class Item
   def initialize(name,price)
     @name = name
     @price = price
-    @@items << self 
+    @@all << self 
   end
 end
