@@ -16,8 +16,9 @@ class Application
         resp.write "Item Not Found"
         resp.status = 404
       end 
+      resp.finish 
     else 
-      
+      resp.write "Path Not Found"
       resp.finish 
       
   end 
