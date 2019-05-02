@@ -12,5 +12,10 @@ class Application
       
       if Item.all.include?(item_name)
         resp.write item_name.price 
+      else 
+        resp.write "Item Not Found"
+        resp.status = 404
+      end 
+      resp.finish 
   end 
 end 
